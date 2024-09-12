@@ -1,6 +1,6 @@
 {
-    "name": "spatial-uielement",
-    "version": "1.0.0",
+    "name": "spatial-ui-element",
+    "version": "0.0.1",
     "description": "Spatial UI Element",
     "repository": "your-org/my-module",
     "license": "MIT",
@@ -29,7 +29,10 @@
         "fix:format": "npm run lint:fix && npm run prettier:format",
         "test": "vitest run",
         "test:watch": "vitest watch",
-        "test:types": "vue-tsc --noEmit && cd playground && vue-tsc --noEmit"
+        "test:types": "vue-tsc --noEmit && cd playground && vue-tsc --noEmit",
+        "docs:dev": "vitepress dev docs",
+        "docs:build": "vitepress build docs",
+        "docs:preview": "vitepress preview docs"
     },
     "dependencies": {
         "@nuxt/kit": "^3.12.4"
@@ -49,6 +52,7 @@
         "nuxt": "^3.12.4",
         "prettier": "^3.3.3",
         "typescript": "latest",
+        "vitepress": "^1.3.4",
         "vitest": "^2.0.3",
         "vue-tsc": "^2.0.26"
     }
