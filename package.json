@@ -29,7 +29,7 @@
         "fix:format": "npm run lint:fix && npm run prettier:format",
         "test": "vitest run",
         "test:watch": "vitest watch",
-        "test:types": "vue-tsc --noEmit && cd playground && vue-tsc --noEmit",
+        "test:types": "vue-tsc --noEmit && cd playground && vue-tsc --noEmit"
     },
     "dependencies": {
         "@nuxt/kit": "^3.12.4"
