@@ -1,5 +1,5 @@
 <template>
-    <div>Welcome to Spatial UI Elements!</div>
+    <NuxtLayout>
+        <NuxtPage />
+    </NuxtLayout>
 </template>
-
-<script setup></script>
