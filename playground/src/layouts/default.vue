@@ -1,7 +1,7 @@
 <template>
     <v-layout>
         <v-app-bar color="primary" class="pl-4 pr-4">
-            <v-app-bar-nav-icon icon="mdi-view-dashboard-variant" to="/"/>
+            <v-app-bar-nav-icon icon="mdi-view-dashboard-variant" to="/" />
             <v-app-bar-title to="/">Spatial UI Elements</v-app-bar-title>
 
             <v-spacer></v-spacer>

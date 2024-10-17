@@ -1,7 +1,7 @@
 <template>
     <component-doc title="SHeaderLogo">
         <template #description>
-            SHeader is used for top level heading which consists application
+            SHeaderLogo is used for top level heading which consists application
             icon of USAID and NASA on left and placeholder for icons in right.
         </template>
         <template #example>

@@ -52,7 +52,7 @@ npm install
   * [Vue](https://vuejs.org/)
   * [Nuxt3](https://nuxt.com/)
   * [Vuetify](https://vuetifyjs.com/)
-  * [OpenLayers](https://vue3openlayers.netlify.app/)
+  * [Leaflet](https://leaflet.nuxtjs.org/)
 
 
 ## Contact

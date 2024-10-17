@@ -1,6 +1,6 @@
 <template>
     <component-doc title="SFooter">
-        <template #description> SHeader is used for bottom of page. </template>
+        <template #description> SFooter is used for bottom of page. </template>
         <template #example>
             <s-footer>Right side Content</s-footer>
         </template>
