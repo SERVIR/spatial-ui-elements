@@ -1,4 +1,15 @@
 {
+    // https://v3.nuxtjs.org/concepts/typescript
     "extends": "./.nuxt/tsconfig.json",
-    "exclude": ["dist", "node_modules", "playground"]
+    "exclude": ["node_modules", ".nuxt", "dist", "playground/*", "test"],
+    "compilerOptions": {
+        "jsx": "preserve",
+        "baseUrl": ".",
+        "paths": {
+            "~/*": ["./*"],
+            "@/*": ["./*"],
+            "~~/*": ["./*"],
+            "@@/*": ["./*"]
+        }
+    }
 }

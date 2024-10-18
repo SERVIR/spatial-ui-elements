@@ -1,1 +1,0 @@
-Example of Spatial UI Elements
