@@ -7,7 +7,7 @@
                         v-bind="props"
                         prepend-icon="mdi-clipboard-text"
                         title="Getting Started"
-                    ></v-list-item>
+                    />
                 </template>
                 <v-list-item
                     v-for="(item, i) in gettingStarted"
@@ -16,7 +16,7 @@
                     :title="item.title"
                     :value="item.title"
                     :to="item.link"
-                ></v-list-item>
+                />
             </v-list-group>
             <v-list-group v-model:opened="groups" value="components">
                 <template #activator="{ props }">
@@ -24,7 +24,7 @@
                         v-bind="props"
                         prepend-icon="mdi-cogs"
                         title="Components"
-                    ></v-list-item>
+                    />
                 </template>
                 <v-list-item
                     v-for="(item, i) in components"
@@ -33,15 +33,13 @@
                     :title="item.title"
                     :value="item.title"
                     :to="item.link"
-                ></v-list-item>
+                />
             </v-list-group>
         </v-list>
     </v-navigation-drawer>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-
 const groups = ['started', 'components']
 
 const gettingStarted = [

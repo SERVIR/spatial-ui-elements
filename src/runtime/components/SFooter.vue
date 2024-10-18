@@ -42,7 +42,7 @@
                     </v-row>
                 </v-col>
                 <slot />
-                <v-col cols="12" sm="6"> </v-col>
+                <v-col cols="12" sm="6"/>
             </v-row>
         </v-container>
     </v-footer>

@@ -10,15 +10,15 @@
                 geospatial applications with a focus on flexibility,
                 performance, and ease of integration for SERVIR Science
                 applications.
-                <br />
-                <br />
+                <br >
+                <br >
                 <div class="d-flex align-center justify-center">
                     <img
                         class=""
                         src="/logos/servir.svg"
                         alt="description"
                         width="200"
-                    />
+                    >
                 </div>
             </v-card-text>
         </v-card>

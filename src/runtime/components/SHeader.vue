@@ -1,10 +1,6 @@
 <template>
     <div>
-        <v-app-bar
-            v-bind="props.configuration"
-            class="s-header"
-            
-        >
+        <v-app-bar v-bind="props.configuration" class="s-header">
             <v-container class="d-flex align-center" style="height: 100%">
                 <v-row class="d-flex align-center">
                     <v-col class="d-flex align-center" cols="8" md="4">
@@ -81,7 +77,7 @@
                 <v-card-title class="text-wrap">
                     <b>{{ props.title }}</b></v-card-title
                 >
-                <v-divider></v-divider>
+                <v-divider/>
 
                 <v-list density="compact" nav>
                     <v-list-item
@@ -90,7 +86,7 @@
                         :prepend-icon="item.icon"
                         :title="item.title"
                         :to="item.route"
-                    ></v-list-item>
+                    />
                 </v-list>
             </v-card>
         </v-navigation-drawer>

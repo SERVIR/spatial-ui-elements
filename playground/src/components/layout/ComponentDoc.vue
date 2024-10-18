@@ -2,9 +2,9 @@
     <div class="pa-5">
         <v-card>
             <v-toolbar color="primary">
-                <v-app-bar-nav-icon icon="mdi-cube"></v-app-bar-nav-icon>
+                <v-app-bar-nav-icon icon="mdi-cube"/>
                 <v-toolbar-title>{{ propc.title }}</v-toolbar-title>
-                <v-spacer></v-spacer>
+                <v-spacer/>
                 <v-btn
                     prepend-icon="mdi-lightbulb-outline"
                     variant="outlined"
@@ -41,7 +41,7 @@
 
             <v-card-item class="bg-surface">
                 <v-card-text>
-                    <slot name="description"></slot>
+                    <slot name="description"/>
                 </v-card-text>
             </v-card-item>
             <v-divider />
@@ -49,44 +49,44 @@
                 <v-toolbar>
                     <v-app-bar-nav-icon
                         icon="mdi-lightbulb-outline"
-                    ></v-app-bar-nav-icon>
+                    />
                     <v-toolbar-title>Example</v-toolbar-title>
                 </v-toolbar>
                 <v-card-text ref="example">
-                    <slot name="example"></slot>
+                    <slot name="example"/>
                 </v-card-text>
             </v-card-item>
             <v-card-item>
                 <v-toolbar>
                     <v-app-bar-nav-icon
                         icon="mdi-tune-variant"
-                    ></v-app-bar-nav-icon>
+                    />
                     <v-toolbar-title>Props</v-toolbar-title>
                 </v-toolbar>
                 <v-card-text ref="props">
-                    <slot name="prop"></slot>
+                    <slot name="prop"/>
                 </v-card-text>
             </v-card-item>
             <v-card-item>
                 <v-toolbar>
                     <v-app-bar-nav-icon
                         icon="mdi-dock-left"
-                    ></v-app-bar-nav-icon>
+                    />
                     <v-toolbar-title>Slots</v-toolbar-title>
                 </v-toolbar>
                 <v-card-text ref="slots">
-                    <slot name="slot"></slot>
+                    <slot name="slot"/>
                 </v-card-text>
             </v-card-item>
             <v-card-item>
                 <v-toolbar>
                     <v-app-bar-nav-icon
                         icon="mdi-flash-outline"
-                    ></v-app-bar-nav-icon>
+                    />
                     <v-toolbar-title>Event</v-toolbar-title>
                 </v-toolbar>
                 <v-card-text ref="events">
-                    <slot name="event"></slot>
+                    <slot name="event"/>
                 </v-card-text>
             </v-card-item>
         </v-card>

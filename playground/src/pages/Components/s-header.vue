@@ -10,7 +10,7 @@
                 :configuration="configuration"
                 :menu="menu"
             />
-            <div class="pt-4"></div>
+            <div class="pt-4"/>
         </template>
         <template #prop>
             <v-table>
@@ -26,7 +26,7 @@
                     <tr>
                         <td>title</td>
                         <td>string</td>
-                        <td></td>
+                        <td/>
                         <td>Requred</td>
                     </tr>
                     <tr>
@@ -53,14 +53,14 @@
                     <tr>
                         <td>menu</td>
                         <td>IRoute</td>
-                        <td></td>
-                        <td></td>
+                        <td/>
+                        <td/>
                     </tr>
                     <tr>
                         <td>imageIcon</td>
                         <td>string</td>
                         <td>SERVIR Logo as default</td>
-                        <td></td>
+                        <td/>
                     </tr>
                 </tbody>
             </v-table>

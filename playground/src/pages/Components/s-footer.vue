@@ -29,7 +29,7 @@
 ],
                             </pre>
                         </td>
-                        <td></td>
+                        <td/>
                     </tr>
                 </tbody>
             </v-table>

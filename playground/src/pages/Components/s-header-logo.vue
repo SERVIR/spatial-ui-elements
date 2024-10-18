@@ -45,11 +45,11 @@
                     </tr>
                     <tr>
                         <td>right</td>
-                        <td>ImageProps[] </td>
+                        <td>ImageProps[]</td>
                         <td>
-                            <pre></pre>
+                            <pre/>
                         </td>
-                        <td></td>
+                        <td/>
                     </tr>
                     <tr>
                         <td>configuration</td>
@@ -80,7 +80,6 @@
 
 <script setup lang="ts">
 import ComponentDoc from '~/components/layout/ComponentDoc.vue'
-
 </script>
 
 <style lang="scss" scoped>
