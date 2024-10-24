@@ -1,18 +1,17 @@
 <template>
-    <v-row no-gutters>
+    <v-row no-gutters :class="`flex-${props.flex}`">
         <v-col>
             <v-btn
                 :size="props.size"
                 :rounded="props.rounded"
                 flat
                 color="primary"
-                variant="outlined"
+                :variant="props.variant"
                 @click="$emit('update:zoom', props.zoom + props.step)"
             >
                 <v-icon>mdi-plus</v-icon>
             </v-btn>
         </v-col>
-        <v-divider :vertical="props.horizontal" color="transparent" />
 
         <v-col>
             <v-btn
@@ -20,46 +19,46 @@
                 :rounded="props.rounded"
                 flat
                 color="primary"
-                variant="outlined"
+                :variant="props.variant"
                 @click="$emit('update:zoom', props.zoom - props.step)"
             >
                 <v-icon>mdi-minus</v-icon>
             </v-btn>
         </v-col>
-        <v-divider :vertical="props.horizontal" color="transparent" />
         <v-col>
             <v-btn
                 :size="props.size"
                 :rounded="props.rounded"
                 flat
                 color="primary"
-                variant="outlined"
+                :variant="props.variant"
                 @click="updateCenter"
             >
                 <v-icon>mdi-home</v-icon>
             </v-btn>
         </v-col>
-       
     </v-row>
 </template>
 
 <script setup lang="ts">
-import type { PointExpression } from 'leaflet';
+import type { PointExpression } from 'leaflet'
 interface Props {
-    horizontal?: boolean
+    flex?: string
     size?: string
     rounded?: string
     step?: number
     zoom?: number
     center: PointExpression
     lmap: any
+    variant: string
 }
 const props = withDefaults(defineProps<Props>(), {
-    horizontal: false,
+    flex: 'column',
     size: 'default',
     rounded: 'true',
     zoom: 6,
     step: 1,
+    variant: 'outlined',
 })
 
 const updateCenter = () => {
