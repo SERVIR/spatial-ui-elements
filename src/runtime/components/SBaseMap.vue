@@ -2,9 +2,9 @@
     <v-expansion-panels v-model="panel">
         <v-expansion-panel color="primary">
             <v-expansion-panel-title
+                v-slot="{ expanded }"
                 expand-icon="mdi-map"
                 collapse-icon="mdi-close"
-                v-slot="{ expanded }"
                 density=""
             >
                 <b>{{ expanded ? 'BaseMap' : ' ' }}</b>
@@ -59,12 +59,11 @@ import L from 'leaflet'
 
 import { useDisplay } from 'vuetify'
 const { smAndDown } = useDisplay()
-interface Props {
+interface Prop {
     lmap: any
 }
-const props = withDefaults(defineProps<Props>(), {})
+const prop = withDefaults(defineProps<Prop>(), {})
 const panel = ref(null)
-const selectedLayer = ref<string | null>(null)
 
 const layers = [
     {
@@ -145,17 +144,17 @@ const layers = [
 ]
 
 const changeBaseLayer = (layerTitle) => {
-    if (!props.lmap) return
+    if (!prop.lmap) return
 
     layers.forEach((layer) => {
-        if (props.lmap.leafletObject.hasLayer(layer.layer)) {
-            props.lmap.leafletObject.removeLayer(layer.layer)
+        if (prop.lmap.leafletObject.hasLayer(layer.layer)) {
+            prop.lmap.leafletObject.removeLayer(layer.layer)
         }
     })
 
     const newLayer = layers.find((layer) => layer.title === layerTitle)
     if (newLayer) {
-        props.lmap.leafletObject.addLayer(newLayer.layer)
+        prop.lmap.leafletObject.addLayer(newLayer.layer)
     }
 }
 </script>

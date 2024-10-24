@@ -2,16 +2,16 @@
     <v-expansion-panels v-model="panel" class="slegend">
         <v-expansion-panel color="primary">
             <v-expansion-panel-title
+                v-slot="{ expanded }"
                 expand-icon="mdi-map-legend"
                 collapse-icon="mdi-close"
-                v-slot="{ expanded }"
             >
                 <b>{{ expanded ? props.title : ' ' }}</b>
             </v-expansion-panel-title>
             <v-expansion-panel-text>
                 <v-card :width="props.width" variant="flat">
                     <v-card-item color="transparent">
-                        <v-row direction="column" noGutters>
+                        <v-row direction="column" no-gutters>
                             <v-col
                                 v-for="legend in legends"
                                 :key="legend.name"
@@ -54,14 +54,14 @@ interface LegendItem {
 }
 
 interface Props {
-    legends: LegendItem[],
-    width?:string,
-    title?:string
+    legends: LegendItem[]
+    width?: string
+    title?: string
 }
 
 const props = withDefaults(defineProps<Props>(), {
-    width:'200px',
-    title:'Legend'
+    width: '200px',
+    title: 'Legend',
 })
 
 watch(

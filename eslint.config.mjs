@@ -6,6 +6,7 @@ export default withNuxt({
     ignores: ['node_modules', '.nuxt', 'dist', 'test', 'playground/*'],
     rules: {
         'vue/multi-word-component-names': 'off', 
+        '@typescript-eslint/no-explicit-any':'off'
     },
     languageOptions: {
         globals: {

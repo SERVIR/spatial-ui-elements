@@ -38,7 +38,7 @@
                     <tr>
                         <td>lmap</td>
                         <td>any</td>
-                        <td></td>
+                        <td />
                         <td>
                             <i>lmap</i> props contains the reference to leaflet
                             map.
@@ -51,7 +51,6 @@
 </template>
 
 <script setup lang="ts">
-import L from 'leaflet'
 import { LMap, LTileLayer, LControl } from '@vue-leaflet/vue-leaflet'
 
 import ComponentDoc from '~/components/layout/ComponentDoc.vue'

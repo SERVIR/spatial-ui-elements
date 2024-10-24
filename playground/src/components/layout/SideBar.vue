@@ -1,5 +1,5 @@
 <template>
-    <v-navigation-drawer  width="400" color="primary">
+    <v-navigation-drawer width="400" color="primary">
         <v-list v-model:opened="groups">
             <v-list-group value="started">
                 <template #activator="{ props }">

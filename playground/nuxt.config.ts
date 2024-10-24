@@ -1,7 +1,12 @@
 export default defineNuxtConfig({
     srcDir: 'src/',
     ssr: false,
-    modules: ['../src/module', '@nuxt/eslint', 'vuetify-nuxt-module','@nuxtjs/leaflet'],
+    modules: [
+        '../src/module',
+        '@nuxt/eslint',
+        'vuetify-nuxt-module',
+        '@nuxtjs/leaflet',
+    ],
     devtools: { enabled: true },
     compatibilityDate: '2024-08-02',
     imports: {
@@ -24,7 +29,7 @@ export default defineNuxtConfig({
                         dark: false,
                         colors: {
                             // background: '#FFFFFF',
-                             primary: '#008080',
+                            primary: '#008080',
                             // secondary: '#E34234',
                             // white: '#FFFFFF',
                             floor: '#DCDCDC',

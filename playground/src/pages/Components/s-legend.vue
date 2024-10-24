@@ -22,30 +22,30 @@
                     <tr>
                         <td>legends</td>
                         <td>LegendItem[]</td>
-                        <td></td>
+                        <td />
                         <td>
-<i>
-    <pre>
+                            <i>
+                                <pre>
     interface LegendItem {
         color: string
         name: number
     }
-</pre>
-</i>
-                            
+</pre
+                                >
+                            </i>
                         </td>
                     </tr>
                     <tr>
                         <td>width</td>
                         <td>string</td>
                         <td>200px</td>
-                        <td></td>
+                        <td />
                     </tr>
                     <tr>
                         <td>title</td>
                         <td>string</td>
                         <td>Legend</td>
-                        <td></td>
+                        <td />
                     </tr>
                 </tbody>
             </v-table>
