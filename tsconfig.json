@@ -5,6 +5,7 @@
     "compilerOptions": {
         "jsx": "preserve",
         "baseUrl": ".",
+        "moduleResolution": "Node",
         "paths": {
             "~/*": ["./*"],
             "@/*": ["./*"],

@@ -77,7 +77,7 @@
                 <v-card-title class="text-wrap">
                     <b>{{ props.title }}</b></v-card-title
                 >
-                <v-divider/>
+                <v-divider />
 
                 <v-list density="compact" nav>
                     <v-list-item

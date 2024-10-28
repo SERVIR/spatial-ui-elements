@@ -47,9 +47,9 @@
                         <td>right</td>
                         <td>ImageProps[]</td>
                         <td>
-                            <pre/>
+                            <pre />
                         </td>
-                        <td/>
+                        <td />
                     </tr>
                     <tr>
                         <td>configuration</td>

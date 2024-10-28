@@ -1,5 +1,5 @@
 <template>
-    <v-navigation-drawer v-show="false" width="400" color="primary">
+    <v-navigation-drawer width="400" color="primary">
         <v-list v-model:opened="groups">
             <v-list-group value="started">
                 <template #activator="{ props }">
@@ -61,6 +61,18 @@ const components = [
     {
         title: 'SFooter',
         link: '/components/s-footer',
+    },
+    {
+        title: 'SLegend',
+        link: '/components/s-legend',
+    },
+    {
+        title: 'SBaseMap',
+        link: '/components/s-base-map',
+    },
+    {
+        title: 'SMapControl',
+        link: '/components/s-map-control',
     },
 ]
 </script>
