@@ -28,10 +28,7 @@ export default defineNuxtConfig({
                     light: {
                         dark: false,
                         colors: {
-                            // background: '#FFFFFF',
                             primary: '#008080',
-                            // secondary: '#E34234',
-                            // white: '#FFFFFF',
                             floor: '#DCDCDC',
                         },
                     },
