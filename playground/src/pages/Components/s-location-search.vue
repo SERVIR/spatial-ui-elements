@@ -35,12 +35,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>flex</td>
-                        <td>string</td>
-                        <td>column</td>
-                        <td>flex can be either <i>column</i> or <i>row</i></td>
-                    </tr>
+                    
                     <tr>
                         <td>size</td>
                         <td>string</td>
@@ -59,24 +54,8 @@
                             circle, and shaped.
                         </td>
                     </tr>
-                    <tr>
-                        <td>step</td>
-                        <td>number</td>
-                        <td>1</td>
-                        <td>step props is used for zoom step</td>
-                    </tr>
-                    <tr>
-                        <td>zoom</td>
-                        <td>number</td>
-                        <td>6</td>
-                        <td />
-                    </tr>
-                    <tr>
-                        <td>center</td>
-                        <td>PointExpression</td>
-                        <td />
-                        <td>Required</td>
-                    </tr>
+                    
+                    
                     <tr>
                         <td>lmap</td>
                         <td>any</td>
