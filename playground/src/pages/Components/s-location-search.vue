@@ -11,10 +11,8 @@
                 :center="center"
                 :options="{ zoomControl: false }"
             >
-            <l-control position="topleft">
-                    <s-location-search
-                        :lmap="lmap"
-                    />
+                <l-control position="topleft">
+                    <s-location-search :lmap="lmap" />
                 </l-control>
 
                 <LTileLayer

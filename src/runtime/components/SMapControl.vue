@@ -50,7 +50,7 @@ interface Props {
     zoom?: number
     center: PointExpression
     lmap: any
-    variant: "outlined" | "flat" | "text" | "elevated" | "tonal" | "plain"
+    variant: 'outlined' | 'flat' | 'text' | 'elevated' | 'tonal' | 'plain'
 }
 const props = withDefaults(defineProps<Props>(), {
     flex: 'column',
