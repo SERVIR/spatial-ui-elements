@@ -74,6 +74,10 @@ const components = [
         title: 'SMapControl',
         link: '/components/s-map-control',
     },
+    {
+        title: 'SLocationSearch',
+        link: '/components/s-location-search',
+    },
 ]
 </script>
 
