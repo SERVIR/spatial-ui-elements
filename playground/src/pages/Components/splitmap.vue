@@ -56,14 +56,13 @@ const afterMapReady = () => {
 
             splitControl.value?.addTo(lmap.value.leafletObject)
         } else {
-            console.error('$SplitMap or lmap is not available')
+            console.error('SplitMap or lmap is not available')
         }
     } catch (error) {
         console.error('Error initializing SplitMap control:', error)
     }
 }
 
-// Hook to run when the component is mounted
 </script>
 
 <style lang="scss"></style>
