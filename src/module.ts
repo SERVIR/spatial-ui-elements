@@ -15,8 +15,18 @@ export default defineNuxtModule<ModuleOptions>({
     defaults: {},
     setup(_options, _nuxt) {
         const resolver = createResolver(import.meta.url)
+        const runtimeDir = resolver.resolve('./runtime')
+        const isDevelopment =
+            runtimeDir.endsWith('src/runtime') ||
+            runtimeDir.endsWith('src\\runtime')
 
-        addPlugin(resolver.resolve('./runtime/plugin'))
+        const styleExtension = isDevelopment ? '.scss' : '.css'
+
+        _nuxt.options.css.push(
+            resolver.resolve('./runtime/assets/scss/splitmap' + styleExtension)
+        )
+
+        addPlugin(resolver.resolve('./runtime/plugins/splitmap'))
         addComponentsDir({
             path: resolver.resolve('./runtime/components'),
             global: true,
@@ -24,10 +34,7 @@ export default defineNuxtModule<ModuleOptions>({
         })
 
         _nuxt.hook('nitro:config', (nitroConfig) => {
-            // Ensure `publicAssets` is an array and push the new asset directory configuration
             nitroConfig.publicAssets ||= []
-
-            // Add directory and maxAge to public assets
             nitroConfig.publicAssets.push({
                 dir: resolver.resolve('./runtime/public'),
                 maxAge: 60 * 60 * 24 * 365, // 1 year in seconds
