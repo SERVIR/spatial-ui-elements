@@ -7,6 +7,8 @@ export default defineNuxtConfig({
         'vuetify-nuxt-module',
         '@nuxtjs/leaflet',
     ],
+    css: ['../src/runtime/assets/scss/splitmap.scss'],
+
     devtools: { enabled: true },
     compatibilityDate: '2024-08-02',
     imports: {

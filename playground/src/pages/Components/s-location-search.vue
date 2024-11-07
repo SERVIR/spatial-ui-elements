@@ -35,7 +35,6 @@
                     </tr>
                 </thead>
                 <tbody>
-                    
                     <tr>
                         <td>size</td>
                         <td>string</td>
@@ -54,8 +53,7 @@
                             circle, and shaped.
                         </td>
                     </tr>
-                    
-                    
+
                     <tr>
                         <td>lmap</td>
                         <td>any</td>

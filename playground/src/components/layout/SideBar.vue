@@ -78,6 +78,10 @@ const components = [
         title: 'SLocationSearch',
         link: '/components/s-location-search',
     },
+    {
+        title: 'SplitMap',
+        link: '/components/splitmap',
+    },
 ]
 </script>
 
