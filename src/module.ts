@@ -27,6 +27,7 @@ export default defineNuxtModule<ModuleOptions>({
         )
 
         addPlugin(resolver.resolve('./runtime/plugins/splitmap'))
+        addPlugin(resolver.resolve('./runtime/plugins/highcharts.client'))
         addComponentsDir({
             path: resolver.resolve('./runtime/components'),
             global: true,
