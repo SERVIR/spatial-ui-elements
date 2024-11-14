@@ -82,6 +82,10 @@ const components = [
         title: 'SplitMap',
         link: '/components/splitmap',
     },
+    {
+        title: 'Geoman',
+        link: '/components/geoman',
+    },
 ]
 </script>
 
