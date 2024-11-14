@@ -62,7 +62,6 @@ const afterMapReady = () => {
         console.error('Error initializing SplitMap control:', error)
     }
 }
-
 </script>
 
 <style lang="scss"></style>

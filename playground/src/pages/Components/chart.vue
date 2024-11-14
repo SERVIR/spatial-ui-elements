@@ -7,14 +7,14 @@
                 <v-col cols="12" sm="6">
                     <v-card variant="flat">
                         <v-card-item>
-                            <highcharts :options="chartOptions1"></highcharts>
+                            <highcharts :options="chartOptions1" />
                         </v-card-item>
                     </v-card>
                 </v-col>
                 <v-col cols="12" sm="6">
                     <v-card variant="flat">
                         <v-card-item>
-                            <highcharts :options="chartOptions"></highcharts>
+                            <highcharts :options="chartOptions" />
                         </v-card-item>
                     </v-card>
                 </v-col>
@@ -168,7 +168,6 @@ const chartOptions1 = ref({
         },
     ],
 })
-
 </script>
 
 <style lang="scss" scoped></style>
