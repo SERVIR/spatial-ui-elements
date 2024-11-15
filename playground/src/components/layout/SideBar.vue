@@ -83,8 +83,12 @@ const components = [
         link: '/components/splitmap',
     },
     {
-        title: 'Geoman',
+        title: 'Geoman(Draw)',
         link: '/components/geoman',
+    },
+    {
+        title: 'HighChart',
+        link: '/components/chart',
     },
 ]
 </script>

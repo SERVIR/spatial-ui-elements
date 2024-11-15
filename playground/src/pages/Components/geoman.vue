@@ -19,7 +19,6 @@
 </template>
 
 <script setup lang="ts">
-import type L from 'leaflet'
 import { LMap, LTileLayer } from '@vue-leaflet/vue-leaflet'
 import type { PointExpression } from 'leaflet'
 import { ref } from 'vue'
@@ -53,7 +52,6 @@ const hookUpDraw = async () => {
         console.log(geofence)
     })
 }
-
 </script>
 
 <style scoped></style>
