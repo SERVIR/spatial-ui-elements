@@ -4,6 +4,7 @@ import {
     createResolver,
     addComponentsDir,
 } from '@nuxt/kit'
+import * as L from 'leaflet';
 
 export interface ModuleOptions {}
 
@@ -25,6 +26,9 @@ export default defineNuxtModule<ModuleOptions>({
         _nuxt.options.css.push(
             resolver.resolve('./runtime/assets/scss/splitmap' + styleExtension)
         )
+        _nuxt.hook('modules:before', () => {
+            _nuxt.options.modules.push('@nuxtjs/leaflet');
+          });
 
         addPlugin(resolver.resolve('./runtime/plugins/splitmap'))
         addPlugin(resolver.resolve('./runtime/plugins/highcharts.client'))
