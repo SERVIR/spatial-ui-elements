@@ -4,7 +4,6 @@ import {
     createResolver,
     addComponentsDir,
 } from '@nuxt/kit'
-import * as L from 'leaflet';
 
 export interface ModuleOptions {}
 

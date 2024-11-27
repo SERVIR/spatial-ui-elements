@@ -1,4 +1,4 @@
-import  'leaflet'
+import 'leaflet'
 import { defineNuxtPlugin } from '#app'
 // Your provided SplitMap control code here...
 let mapWasDragEnabled
@@ -226,9 +226,5 @@ L.control.splitMap = function (leftLayers, rightLayers, options) {
 }
 
 export default defineNuxtPlugin((nuxtApp) => {
-    if (process.client) {
-        nuxtApp.provide('SplitMap', L.control.splitMap)
-
-    }
-    // nuxtApp.provide('SplitMap', ()=>{console.log("hello world",L.control.splitMap ,L.Control.SplitMap )})
+    nuxtApp.provide('SplitMap', L.control.splitMap)
 })
