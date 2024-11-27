@@ -1,0 +1,38 @@
+name: Release
+on:
+  push:
+    branches:
+      - main # Specify your default branch
+
+permissions:
+  contents: write # Allow writing to the repository for tags and releases
+  statuses: write
+  issues: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.5.1
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Prepare for development
+        run: npm run dev:prepare
+
+      - name: Prepack the project
+        run: npm run prepack
+
+      - name: Run audit
+        run: npm audit signatures
+
+      - name: Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npx semantic-release
