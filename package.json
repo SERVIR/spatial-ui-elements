@@ -2,7 +2,7 @@
     "name": "@servirglobal/spatial-ui-elements",
     "version": "0.0.0-development",
     "description": "Spatial UI Element",
-    "repository": "your-org/my-module",
+    "repository": "SERVIR/spatial-ui-elements",
     "license": "MIT",
     "type": "module",
     "exports": {
